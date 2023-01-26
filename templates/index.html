@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bienvenido
+{% endblock %}
+
+{% block content %}
+<div class="center">
+
+    <h1> Act. 25 marzo </h1>
+
+    <form method="post">
+        <div class="txt_field">
+            <label> Nombre </label>
+            <input type="text" required>
+
+        </div>
+        <div class="txt_field">
+            <label> ¿Puedes asistir? </label>
+            <select name="cars" id="cars">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+
+        <input type="submit" value="Guardar">
+    </form>
+</div>
+{% endblock %}
+
+{% import 'footer.html' as footer %}
+
+{% block footer %}
+{{ footer }}
+{% endblock %}
